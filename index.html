@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="smiley-face.png">
+    <!-- <img src="smiley-face.png" alt="Logo" class="logo"> -->
+    <title>etch-a-sketch</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Etch-a-Sketch</h1>
+    </header>
+    
+    <div class="mainContent">
+        <div class="controls">
+            <div class="colorPalette">
+                <button class="colorBtn" style="background-color: black;"></button>
+                <button class="colorBtn" style="background-color: red;"></button>
+                <button class="colorBtn" style="background-color: yellow"></button>
+                <button class="colorBtn" style="background-color: green"></button>
+                <button class="colorBtn" style="background-color: blue"></button>
+            </div>
+            <button id="eraseButton">Erase</button>
+            <button id="clearButton">Clear</button>
+            <label for="sizeSlider"><span id="sizeValue">32 x 32</span></label>
+            <input type="range" min="1" max="100" value="32" id="sizeSlider">
+        </div>
+        <div id="container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
